@@ -41,6 +41,7 @@ const Navbar = ({ user: propUser, onLogout }) => {
 
   const toggleMenu = () => setMenuOpen((prev) => !prev);
 
+  // Logout
   const handleLogout = () => {
     setMenuOpen(false);
     localStorage.removeItem("token");
