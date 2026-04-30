@@ -106,7 +106,7 @@ export async function loginUser(req, res) {
 }
 
 // Get logged in user details
-export async function getcurrentUser(req, res) {
+export async function getCurrentUser(req, res) {
   try {
     const user = await User.findById(req.user.id).select("name email");
     if (!user) {

@@ -1,6 +1,6 @@
 import express from "express";
 import {
-  getcurrentUser,
+  getCurrentUser,
   loginUser,
   registerUser,
   updatePassword,
@@ -14,7 +14,7 @@ userRouter.post("/register", registerUser);
 userRouter.post("/login", loginUser);
 
 // Protected routes
-userRouter.get("/me", authMiddleware, getcurrentUser);
+userRouter.get("/me", authMiddleware, getCurrentUser);
 userRouter.put("/profile", authMiddleware, updateProfile);
 userRouter.put("/password", authMiddleware, updatePassword);
 
