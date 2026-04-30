@@ -329,7 +329,7 @@ const Layout = ({ onLogout, user }) => {
                 <p className={styles.statCards.cardTitle}>Total Balance</p>
                 <p className={styles.statCards.cardValue}>
                   Ksh
-                  {stats.allTimeSavings.toLocaleString("en-KE", {
+                  {stats.allTimeSavings.toLocaleString("en-US", {
                     maximumFractionDigits: 2,
                   })}
                 </p>
@@ -457,9 +457,9 @@ const Layout = ({ onLogout, user }) => {
               </div>
 
               <div className={styles.transactions.listContainer}>
-                {displayedTransactions.map((trasaction) => {
+                {displayedTransactions.map((transaction) => {
                   const { id, type, category, description, date, amount } =
-                    transactions;
+                    transaction;
                   return (
                     <div
                       key={id}
