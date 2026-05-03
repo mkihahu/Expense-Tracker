@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { signupStyles } from "../assets/dummyStyles";
 import { Link, useNavigate } from "react-router-dom";
